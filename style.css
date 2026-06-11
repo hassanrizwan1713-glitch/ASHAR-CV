@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap'); */
 
 *{
     margin:0;
@@ -173,4 +173,94 @@ body{
     color:#444;
     line-height:1.8;
     margin-bottom:4px;
+}
+@media (max-width: 768px) {
+
+    body {
+        padding: 15px;
+        display: block;
+    }
+
+    .cv {
+        width: 100%;
+        min-height: auto;
+        padding: 25px 20px;
+    }
+
+    /* HEADER STACK */
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-image {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-box {
+        width: 100%;
+        padding: 18px 20px;
+    }
+
+    .contact-box h1 {
+        font-size: 22px;
+    }
+
+    .contact p {
+        font-size: 11px;
+    }
+
+    /* ABOUT */
+    .about {
+        width: 100%;
+        font-size: 11px;
+    }
+
+    /* MAIN STACK */
+    .main {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
+
+    .skills-box {
+        padding: 20px;
+    }
+
+    .skills-box h2,
+    .education h2,
+    .right h2 {
+        font-size: 20px;
+    }
+
+    .job strong,
+    .skills-box li,
+    .job li {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .cv {
+        padding: 18px 15px;
+    }
+
+    .contact-box h1 {
+        font-size: 20px;
+    }
+
+    .profile-image {
+        width: 85px;
+        height: 85px;
+    }
+
+    .about {
+        font-size: 10.5px;
+    }
 }
